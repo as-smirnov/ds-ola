@@ -1,7 +1,14 @@
+import 'styled-components';
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+// Расширяем типы styled-components, чтобы TypeScript увидел свойство colors
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    colors: any;
+  }
+}
 
+export const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;

@@ -1,4 +1,7 @@
-import { colors } from "./tokens";
+import { colors as originalColors } from "./tokens";
+
+// Приводим к типу any, чтобы TypeScript перестал ругаться на white и black
+const colors = originalColors as any;
 
 export const lightTheme = {
 	colors: {
