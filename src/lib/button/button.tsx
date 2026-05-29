@@ -1,4 +1,5 @@
-import styled from "styled-components";
+// import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface IButtonProps {
     size?: "300" | "400";
@@ -12,20 +13,63 @@ interface IButtonProps {
     endIcon?: React.ReactNode;
 }
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<IButtonProps>`
+    
+    /* 0. ГЛОБАЛЬНЫЕ СТИЛИ */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 
-    /* 1. РАЗМЕРЫ ИЗ ТЕМЫ */
-    border-style: solid;
+    border: solid transparent;
+    /* border-style  */
     gap: none;
+
+    ${props => props.variant === "Primary" && css`
+        &:enabled {
+            background: ${props => props.theme.components.button.base.primary.brand.bg.color.default};
+            color: ${props => props.theme.components.button.base.primary.brand.label.color.default};
+        }
+    `}
+
+
+
+
+    /* 1. РАЗМЕРЫ */
+    /* height:
+    padding-inline:
+    padding-block:
+    border-radius:
+    border-width: */
+
+    /* 2. ФОН */
+
+    /* 3. БОРДЕР */
 
 `;
 
-export const Button = () => {
-    return <StyledButton>Button</StyledButton>;
+export const Button: React.FC<IButtonProps> = ({
+    size,
+    variant="Primary",
+    tone,
+    loading,
+    disabled,
+    startIcon,
+    label = "Button",
+    endIcon
+}) => {
+    return <StyledButton 
+                size={size}
+                variant={variant}
+                tone={tone}
+                loading={loading}
+                disabled={disabled}
+                label={label}
+            >
+                {startIcon}
+                {label}
+                {endIcon}
+            </StyledButton>;
 };
 
 

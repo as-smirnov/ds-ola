@@ -5,13 +5,13 @@ import { Button } from "./lib/button/button";
 
 function App() {
 	// true — светлая тема, false — темная тема
-	const switcher = true; 
+	const switcher = false; 
 
 	return (
 		<ThemeProvider theme={switcher ? lightTheme : darkTheme}>
 			<GlobalStyle/>
 			<main>
-				<Button />
+				<Button label="Button"/>
 			</main>
 		</ThemeProvider>
 	);
