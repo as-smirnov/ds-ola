@@ -9,8 +9,8 @@ export interface PlaceholderProps {
 }
 
 const StyledPlaceholder = styled.div<PlaceholderProps>`
-	color: black;
-`
+	color: ${(props) => props.theme.semantic.colors.text.neutral.strong};
+`;
 
 /**
  * Тестовый компонент заглушка

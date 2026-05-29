@@ -1,12 +1,5 @@
-import 'styled-components';
+import "styled-components";
 import { createGlobalStyle } from "styled-components";
-
-// Расширяем типы styled-components, чтобы TypeScript увидел свойство colors
-declare module 'styled-components' {
-  export interface DefaultTheme {
-    colors: any;
-  }
-}
 
 export const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
@@ -23,6 +16,6 @@ export const GlobalStyle = createGlobalStyle`
             -webkit-overflow-scrolling: touch;
 
             font-family: sans-serif;
-            background: ${({ theme }) => theme.colors.bg.calm.global};
+            background: ${(props) => props.theme.semantic.colors.bg.layer1};
 	}
 `;

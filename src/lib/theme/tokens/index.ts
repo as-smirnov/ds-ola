@@ -1,4 +1,4 @@
-export * from "./colors";
-export * from "./spacers";
+export * from "./palette";
+export * from "./pixels";
 export * from "./typography";
-export * from "./z-index";
+// export * from "./z-index";
