@@ -1,5 +1,5 @@
-import { css } from "styled-components";
-import { pixels } from "./pixels";
+import { css } from 'styled-components'
+import { pixels } from './pixels'
 
 // ==========================================
 // ГРУППА 1: Global-typography
@@ -7,12 +7,12 @@ import { pixels } from "./pixels";
 
 export const globalTypography = {
   fontFamily: {
-    base: `"Inter Variable", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+    base: `"Inter"`,
   },
   fontWeight: {
-    default: "400",
-    medium: "450",
-    strong: "550",
+    default: '400',
+    medium: '450',
+    strong: '550',
   },
   fontSize: {
     100: pixels[100],
@@ -35,7 +35,7 @@ export const globalTypography = {
     300: pixels[300],
     400: pixels[400],
   },
-};
+}
 
 // ==========================================
 // ГРУППА 2: Semantic-typography
@@ -43,7 +43,7 @@ export const globalTypography = {
 
 export const semanticTypography = {
   label: {
-    "137": {
+    '137': {
       default: css`
         font-family: ${globalTypography.fontFamily.base};
         font-weight: ${globalTypography.fontWeight.default};
@@ -63,7 +63,7 @@ export const semanticTypography = {
         line-height: ${globalTypography.lineHeight[200]};
       `,
     },
-    "162": {
+    '162': {
       default: css`
         font-family: ${globalTypography.fontFamily.base};
         font-weight: ${globalTypography.fontWeight.default};
@@ -83,7 +83,7 @@ export const semanticTypography = {
         line-height: ${globalTypography.lineHeight[200]};
       `,
     },
-    "187": {
+    '187': {
       default: css`
         font-family: ${globalTypography.fontFamily.base};
         font-weight: ${globalTypography.fontWeight.default};
@@ -104,35 +104,35 @@ export const semanticTypography = {
       `,
     },
   },
-};
+}
 
 // ==========================================
 // ГРУППА 3: Components-typography
 // ==========================================
 
 export const badgeTypography = {
-  "200": { label: semanticTypography.label["137"].medium },
-  "250": { label: semanticTypography.label["137"].medium },
-  "300": { label: semanticTypography.label["137"].medium },
-};
+  '200': { label: semanticTypography.label['137'].medium },
+  '250': { label: semanticTypography.label['137'].medium },
+  '300': { label: semanticTypography.label['137'].medium },
+}
 export const buttonTypography = {
-  "300": { label: semanticTypography.label["137"].medium },
-  "400": { label: semanticTypography.label["162"].medium },
-};
+  '300': { label: semanticTypography.label['137'].medium },
+  '400': { label: semanticTypography.label['162'].medium },
+}
 export const checkboxTypography = {
-  "200": { label: semanticTypography.label["162"].default },
-  "250": { label: semanticTypography.label["187"].default },
-};
+  '200': { label: semanticTypography.label['162'].default },
+  '250': { label: semanticTypography.label['187'].default },
+}
 export const pimpleTypography = {
-  "200": { label: semanticTypography.label["137"].medium },
-  "250": { label: semanticTypography.label["137"].medium },
-  "300": { label: semanticTypography.label["162"].medium },
-};
+  '200': { label: semanticTypography.label['137'].medium },
+  '250': { label: semanticTypography.label['137'].medium },
+  '300': { label: semanticTypography.label['162'].medium },
+}
 export const radioButtonTypography = {
-  "200": { label: semanticTypography.label["162"].default },
-  "250": { label: semanticTypography.label["187"].default },
-};
+  '200': { label: semanticTypography.label['162'].default },
+  '250': { label: semanticTypography.label['187'].default },
+}
 export const switcherTypography = {
-  "200": { label: semanticTypography.label["162"].default },
-  "250": { label: semanticTypography.label["187"].default },
-};
+  '200': { label: semanticTypography.label['162'].default },
+  '250': { label: semanticTypography.label['187'].default },
+}

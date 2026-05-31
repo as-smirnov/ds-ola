@@ -1,102 +1,75 @@
-import React from "react";
-import styled, { css, keyframes } from "styled-components";
-import { Loader } from "../loader/loader";
+import { Loader } from '../loader/loader'
+import { IButtonProps } from './types'
+import {
+  ButtonContent,
+  ButtonIcon,
+  ButtonLabel,
+  ButtonLoaderPosition,
+  StyledButton,
+} from './styles'
 
-/**
- * ============================================================================
- * ШАГ 1: ТИПЫ И ИНТЕРФЕЙСЫ (Панель свойств компонента в Figma)
- * ============================================================================
- */
+export const Button = ({
+  label,
+  size = '400', // Значение по умолчанию, если разработчик его не передал
+  variant = 'Primary', // Значение по умолчанию
+  tone = 'Brand', // Значение по умолчанию
+  loading = false,
+  disabled = false,
+  startIcon,
+  endIcon,
+  ...props // Сюда автоматически собираются все остальные стандартные пропсы (onClick, id и т.д.)
+}: IButtonProps) => {
+  // Внутренняя логика безопасности: кнопка технически блокируется,
+  // если она либо отключена вручную (disabled), либо сейчас крутится загрузка (loading).
+  const isDisabled = disabled || loading
 
-// Ограничиваем списки значений (как выпадающие списки / Variants в Figma).
-// Названия строго с большой буквы, так как в файле theme.ts они написаны так же.
-export type ButtonSize = "300" | "400";
-export type ButtonVariant = "Primary" | "Secondary" | "Outline" | "Ghost";
-export type ButtonTone = "Neutral" | "Brand" | "Positive" | "Warning" | "Negative" | "Inverse";
+  return (
+    <StyledButton
+      $size={size}
+      $variant={variant}
+      $tone={tone}
+      $loading={loading}
+      disabled={isDisabled} // Передаем итоговый статус блокировки в HTML-тег
+      {...props} // Прокидываем стандартные атрибуты (например, onClick) на кнопку
+    >
+      {/* 1. ЕСЛИ ИДЕТ ЗАГРУЗКА: вызываем наш автономный лоадер */}
+      {loading && (
+        <ButtonLoaderPosition>
+          <Loader
+            // Переводчик: если размер кнопки 400 -> дай лоадеру большую сетку. Если нет -> маленькую.
+            size={size === '400' ? '16.Base' : '16.Small'}
+            // .toLowerCase() переводит БОЛЬШИЕ буквы кнопки (Primary) в маленькие буквы лоадера (primary)
+            // (as any) защищает код от придирок TypeScript к несовпадению регистров букв
+            variant={variant.toLowerCase() as any}
+            tone={tone.toLowerCase() as any}
+          />
+        </ButtonLoaderPosition>
+      )}
 
-// Описываем, какие пропсы (свойства) внешние разработчики могут передать в кнопку.
-// `extends` автоматически добавляет сюда все стандартные свойства HTML-кнопки (например, disabled, onClick).
-export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  size?: ButtonSize;          // Необязательный размер кнопки (дефолт зададим ниже)
-  variant?: ButtonVariant;    // Необязательный вариант стиля (дефолт зададим ниже)
-  tone?: ButtonTone;          // Необязательный цветовой тон (дефолт зададим ниже)
-  loading?: boolean;          // Включает состояние загрузки (true / false)
-  label: string;              // Текст внутри кнопки
-                              // Заметка: Если в будущем нужна будет супер-гибкость (сложная разметка внутри текста), 
-                              // нужно будет заменить `label: string` на встроенное свойство `children`.
-  startIcon?: string;         // Строковое имя иконки слева (например, "Trash"). Безопасно, без лишней разметки.
-  endIcon?: string;           // Строковое имя иконки справа (например, "ArrowRight").
+      {/* 2. ОСНОВНОЙ КОНТЕНТ КНОПКИ */}
+      {/* Станет невидимым в момент загрузки, но сохранит габариты кнопки */}
+      <ButtonContent $loading={loading}>
+        {/* Иконка СЛЕВА. Появится только если передано имя иконки в пропсы */}
+        {startIcon && (
+          <ButtonIcon $size={size}>
+            {/* Имитируем вызов иконки по имени. Настоящий компонент иконок <Icon /> подключится сюда */}
+            <span className={`icon-${startIcon}`} />
+          </ButtonIcon>
+        )}
+
+        {/* Текст кнопки, обернутый в правильные отступы */}
+        <ButtonLabel>{label}</ButtonLabel>
+
+        {/* Иконка СПРАВА */}
+        {endIcon && (
+          <ButtonIcon $size={size}>
+            <span className={`icon-${endIcon}`} />
+          </ButtonIcon>
+        )}
+      </ButtonContent>
+    </StyledButton>
+  )
 }
-
-/**
- * ============================================================================
- * ШАГ 2: ВСПОМОГАТЕЛЬНЫЕ СТИЛИ И АНИМАЦИИ
- * ============================================================================
- */
-
-// Обертка для контента (Текст + Иконки).
-// Когда `loading: true`, мы плавно скрываем весь этот контент через прозрачность (opacity),
-// но сама кнопка не схлопывается, сохраняя свои изначальные размеры.
-const ButtonContent = styled.span<{ $loading: boolean }>`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  gap: inherit; /* Наследует gap от родительской кнопки StyledButton */
-  
-  opacity: ${({ $loading }) => ($loading ? 0 : 1)};
-  visibility: ${({ $loading }) => ($loading ? "hidden" : "visible")};
-  transition: opacity 0.2s ease-in-out;
-`;
-
-// Обертка для текста (Label) с внутренними боковыми отступами в 4px по твоему ТЗ
-const ButtonLabel = styled.span`
-  padding-left: 4px;
-  padding-right: 4px;
-  display: inline-block;
-`;
-
-// Стили для иконки. Компонент кнопки сам жестко контролирует размер иконки
-// в зависимости от выбранного размера кнопки ($size).
-const ButtonIcon = styled.span<{ $size: ButtonSize }>`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-
-  svg {
-    /* Если размер кнопки 400 — иконка 16px. Если 300 — иконка 12px. */
-    width: ${({ $size }) => ($size === "400" ? "16px" : "12px")};
-    height: ${({ $size }) => ($size === "400" ? "16px" : "12px")};
-  }
-`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // // import styled from "styled-components";
 // import styled, { css } from "styled-components";
@@ -116,13 +89,13 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 // }
 
 // const StyledButton = styled.button<IButtonProps>`
-    
+
 //     /* 0. ГЛОБАЛЬНЫЕ СТИЛИ */
 //     display: inline-flex;
 //     align-items: center;
 //     justify-content: center;
 //     cursor: pointer;
-    
+
 //     /* 1. СКВОЗНЫЕ СТИЛИ */
 //     /* font: */
 //     gap: none;
@@ -186,7 +159,7 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //         }
 //         &:disabled {
 //             cursor: not-allowed;
-            
+
 //             color: ${props => props.theme.components.button.base.secondary.brand.label.color.disabled};
 //             background: ${props => props.theme.components.button.base.secondary.brand.bg.color.disabled};
 //             border-color: ${props => props.theme.components.button.base.secondary.brand.border.color.disabled};
@@ -210,7 +183,7 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //         }
 //         &:disabled {
 //             cursor: not-allowed;
-            
+
 //             color: ${props => props.theme.components.button.base.outline.brand.label.color.disabled};
 //             background: ${props => props.theme.components.button.base.outline.brand.bg.color.disabled};
 //             border-color: ${props => props.theme.components.button.base.outline.brand.border.color.disabled};
@@ -218,7 +191,7 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //     `}
 // `;
 
-// // const StyledWrapper = styled.span<{ 
+// // const StyledWrapper = styled.span<{
 // //     $size: "300" | "400";
 // //     $variant: ThemeVariant;
 // //     $tone: ThemeTone;
@@ -241,7 +214,7 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //     label = "Button",
 //     endIcon
 // }) => {
-//     return <StyledButton 
+//     return <StyledButton
 //                 size={size}
 //                 variant={variant}
 //                 tone={tone}
@@ -255,27 +228,9 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //             </StyledButton>;
 // };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import React from "react";
 // import styled from "styled-components";
-// import { buttonTypography } from "../theme/tokens"; 
+// import { buttonTypography } from "../theme/tokens";
 
 // interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 //     size?: "300" | "400";
@@ -291,9 +246,9 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 // type ThemeVariant = "primary" | "secondary" | "outline" | "ghost";
 // type ThemeTone = "neutral" | "brand" | "positive" | "warning" | "negative" | "inverse";
 
-// const StyledButton = styled.button<{ 
-//     $size: "300" | "400"; 
-//     $variant: ThemeVariant; 
+// const StyledButton = styled.button<{
+//     $size: "300" | "400";
+//     $variant: ThemeVariant;
 //     $tone: ThemeTone;
 //     $loading: boolean;
 // }>`
@@ -343,7 +298,7 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //             const targetTone = ($tone in variantGroup ? $tone : Object.keys(variantGroup)[0]) as keyof typeof variantGroup;
 //             return variantGroup[targetTone].border.color.hover;
 //         }};
-        
+
 //         span {
 //             color: ${({ theme, $variant, $tone }) => {
 //                 const variantGroup = theme.components.button.base[$variant];
@@ -364,7 +319,7 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //             const targetTone = ($tone in variantGroup ? $tone : Object.keys(variantGroup)[0]) as keyof typeof variantGroup;
 //             return variantGroup[targetTone].border.color.press;
 //         }};
-        
+
 //         span {
 //             color: ${({ theme, $variant, $tone }) => {
 //                 const variantGroup = theme.components.button.base[$variant];
@@ -379,7 +334,7 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //     }
 // `;
 
-// const StyledWrapper = styled.span<{ 
+// const StyledWrapper = styled.span<{
 //     $size: "300" | "400";
 //     $variant: ThemeVariant;
 //     $tone: ThemeTone;
@@ -391,7 +346,7 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //     align-items: center;
 //     justify-content: center;
 //     text-align: center;
-    
+
 //     /* Внутренние боковые отступы из Gist */
 //     padding-inline: ${({ theme, $size }) => theme.components.button[$size].label.paddingX};
 //     padding-block: 0px;
@@ -407,7 +362,6 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //         return config.label.color.default;
 //     }};
 
-    
 //     ${({ $size }) => buttonTypography[$size].label}
 // `;
 
@@ -426,17 +380,17 @@ const ButtonIcon = styled.span<{ $size: ButtonSize }>`
 //     const normalizedTone = tone.toLowerCase() as ThemeTone;
 
 //     return (
-//         <StyledButton 
-//             $size={size} 
-//             $variant={normalizedVariant} 
+//         <StyledButton
+//             $size={size}
+//             $variant={normalizedVariant}
 //             $tone={normalizedTone}
 //             $loading={loading}
 //             disabled={disabled || loading}
 //             {...props}
 //         >
-//             <StyledWrapper 
+//             <StyledWrapper
 //                 $size={size}
-//                 $variant={normalizedVariant} 
+//                 $variant={normalizedVariant}
 //                 $tone={normalizedTone}
 //                 $loading={loading}
 //                 $disabled={disabled}
