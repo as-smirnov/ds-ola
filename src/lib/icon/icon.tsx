@@ -36,7 +36,7 @@ const Path = styled.path`
 export const Icon: FC<ISvgProps> = ({
 	iconName = "browser",
 	block = false,
-	size = 24,
+	size = 16,
 	...props
 }) => {
 	return (
