@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { buttonTypography } from "../theme/tokens/typography";
+import { buttonTypography } from "../../theme/tokens/typography";
 import { Icon } from "../icon/icon"; // Подтягиваем наш умный компонент иконок
 import { Loader } from "../loader/loader";
 

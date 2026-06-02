@@ -1,8 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle, lightTheme, darkTheme } from "./lib/theme";
-import { Loader } from "./lib/loader/loader";
-import { Button } from "./lib/button/button";
+import { Loader } from "./lib/ui/loader/loader";
+import { Button } from "./lib/ui/button/button";
 
 function App() {
 	// true — светлая тема, false — темная тема
