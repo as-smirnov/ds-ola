@@ -4,7 +4,10 @@
         "skipLibCheck": true,
         "module": "ESNext",
         "moduleResolution": "bundler",
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        /* 🎯 ДОБАВЛЯЕМ СЮДА: разрешаем служебным файлам сборщика */
+        /* использовать плагины на чистом JS без встроенных типов */
+        "noImplicitAny": false
     },
     "include": [
         "vite.config.ts"
@@ -12,5 +15,5 @@
     "exclude": [
         "node_modules",
         "**/*.stories.*"
-    ],
+    ]
 }

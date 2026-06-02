@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle, lightTheme, darkTheme } from "./lib/theme";
 import { Loader } from "./lib/loader/loader";
-// import { Button } from "./lib/button/button";
+import { Button } from "./lib/button/button";
 
 function App() {
 	// true — светлая тема, false — темная тема
@@ -20,16 +20,31 @@ function App() {
 				gap: "16px",
 				minHeight: "100vh"
 			}}>
-				<Loader
+				{/* <Loader
 					size="16.Base"
 					variant="secondary"
-					tone="positive"
-				/>
-				{/* <Button
-					size="400"
-					variant="Outline"
-					label="Button"
+					tone="brand"
 				/> */}
+				<Button
+					size="400"
+					variant="primary"
+					tone="brand"
+					label="Button"
+				/>
+				<Button
+					size="400"
+					variant="primary"
+					tone="brand"
+					disabled
+					label="Button"
+				/>
+				<Button
+					size="400"
+					variant="primary"
+					tone="brand"
+					loading
+					label="Button"
+				/>
 			</main>
 		</ThemeProvider>
 	);

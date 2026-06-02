@@ -1,13 +1,15 @@
 import { css } from "styled-components";
 import { pixels } from "./pixels";
 
-// ==========================================
+// =1========================================
 // ГРУППА 1: Global-typography
 // ==========================================
 
+// -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
+
 export const globalTypography = {
   fontFamily: {
-    base: `"Inter Variable", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+    base: `"Inter Variable"`,
   },
   fontWeight: {
     default: "400",
@@ -37,7 +39,7 @@ export const globalTypography = {
   },
 };
 
-// ==========================================
+// =2========================================
 // ГРУППА 2: Semantic-typography
 // ==========================================
 
@@ -106,7 +108,7 @@ export const semanticTypography = {
   },
 };
 
-// ==========================================
+// =3========================================
 // ГРУППА 3: Components-typography
 // ==========================================
 

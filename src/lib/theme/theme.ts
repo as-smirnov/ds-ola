@@ -1,4 +1,4 @@
-import { palette, pixels, globalTypography } from "./tokens";
+import { motion, palette, percents, pixels, globalTypography } from "./tokens";
 import { hexToRgba } from "./utils/hexToRgba";
 
 // ==========================================
@@ -735,6 +735,19 @@ const semanticTokens = {
       250: globalTypography.lineHeight[250],
       300: globalTypography.lineHeight[300],
       400: globalTypography.lineHeight[400],
+    },
+  },
+  opacity: {
+    hidden: percents[0],
+    visible: percents[100],
+  },
+  motion: {
+    duration: {
+      fast: motion.duration.fast,
+      medium: motion.duration.medium,
+    },
+    easing: {
+      interactive: motion.easing.interactive,
     },
   },
 };
@@ -3272,6 +3285,16 @@ const lightSemantic = semanticTokens;
 export const lightTheme = {
   semantic: lightSemantic,
   components: getComponentTokens(lightSemantic),
+
+  // 🎯 ДОБАВЛЯЕМ СЮДА (после запятой):
+  transitionFast: function (properties: string[]) {
+    // Внимание: так как в типах Styled Components интерфейс темы жесткий,
+    // добавляем (this as any), чтобы TypeScript не ругался на отсутствие semantic
+    const duration = (this as any).semantic.motion.duration.fast;
+    const easing = (this as any).semantic.motion.easing.interactive;
+
+    return properties.map((prop) => `${prop} ${duration} ${easing}`).join(", ");
+  },
 };
 const darkSemantic = {
   ...semanticTokens,
