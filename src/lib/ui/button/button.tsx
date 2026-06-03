@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { buttonTypography } from "../../theme/tokens/typography";
 import { Icon } from "../icon/icon"; // Подтягиваем наш умный компонент иконок
 import { Loader } from "../loader/loader";
 
@@ -148,7 +147,7 @@ const ButtonLabel = styled.span<{ $size: ButtonSize; $variant: ButtonVariant; $t
   /* 2. ТИПОГРАФИКА ИЗ ТЕМЫ */
   // Код берет $size (например "400"), заходит в импортированный объект buttonTypography,
   // открывает папку .label и выгружает оттуда весь набор CSS-стилей текста!
-  ${({ $size }) => buttonTypography[$size].label}
+  ${({ theme, $size }) => theme.components.button.typography[$size].label}
 
   ${StyledButton}:enabled & {
     color: ${({ theme, $variant, $tone }) => {
