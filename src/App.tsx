@@ -29,21 +29,27 @@ function App() {
 					size="400"
 					variant="primary"
 					tone="brand"
+					// startIcon="🔥"
 					label="Button"
+					// endIcon="🚀"
 				/>
 				<Button
 					size="400"
 					variant="primary"
 					tone="brand"
 					disabled
+					// startIcon="🔥"
 					label="Button"
+					// endIcon="🚀"
 				/>
 				<Button
 					size="400"
 					variant="primary"
 					tone="brand"
 					loading
+					// startIcon="🔥"
 					label="Button"
+					// endIcon="🚀"
 				/>
 			</main>
 		</ThemeProvider>
@@ -51,32 +57,3 @@ function App() {
 }
 
 export default App;
-
-
-// return (
-// 		<ThemeProvider theme={switcher ? lightTheme : darkTheme}>
-// 			<GlobalStyle/>
-// 			<main style={{ 
-// 				padding: "40px", 
-// 				display: "flex", 
-// 				flexDirection: "column", 
-// 				alignItems: "center",
-// 				justifyContent: "center",
-// 				gap: "16px",
-// 				minHeight: "100vh"
-// 			}}>
-// 				<Button 
-// 					size="400"
-// 					variant="Primary"
-// 					tone="Brand"
-// 					// startIcon="🔥"
-// 					label="Button"
-// 					// endIcon="🚀"
-// 				disabled />
-
-// 				{/* loading
-// 				disabled */}
-
-// 			</main>
-// 		</ThemeProvider>
-// 	);
