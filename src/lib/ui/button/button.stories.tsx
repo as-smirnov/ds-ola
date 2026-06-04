@@ -18,13 +18,20 @@ const meta = {
     // 1. Стандартный тон: показывается для всех вариантов, КРОМЕ ghost
     tone: {
       control: "select",
-      options: ["neutral", "brand", "positive", "warning", "negative", "inverse"],
+      options: [
+        "neutral",
+        "brand",
+        "positive",
+        "warning",
+        "negative",
+        "inverse",
+      ],
       if: { arg: "variant", neq: "ghost" },
     },
     // 2. Тон для ghost: показывается ТОЛЬКО когда выбран вариант ghost
     // Поле связано с пропсом "tone" через свойство name
     toneForGhost: {
-      name: "tone", 
+      name: "tone",
       control: "select",
       options: ["neutral", "brand", "positive", "warning", "negative"],
       if: { arg: "variant", eq: "ghost" },
@@ -81,10 +88,18 @@ export const Playground: Story = {
 export const AllVariants: Story = {
   render: (args) => (
     <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-      <Button {...args} variant="primary">Primary</Button>
-      <Button {...args} variant="secondary">Secondary</Button>
-      <Button {...args} variant="outline">Outline</Button>
-      <Button {...args} variant="ghost">Ghost</Button>
+      <Button {...args} variant="primary">
+        Primary
+      </Button>
+      <Button {...args} variant="secondary">
+        Secondary
+      </Button>
+      <Button {...args} variant="outline">
+        Outline
+      </Button>
+      <Button {...args} variant="ghost">
+        Ghost
+      </Button>
     </div>
   ),
   args: {
@@ -99,8 +114,12 @@ export const AllVariants: Story = {
 export const AllSizes: Story = {
   render: (args) => (
     <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-      <Button {...args} size="400">Size 400</Button>
-      <Button {...args} size="300">Size 300</Button>
+      <Button {...args} size="400">
+        Size 400
+      </Button>
+      <Button {...args} size="300">
+        Size 300
+      </Button>
     </div>
   ),
   args: {
