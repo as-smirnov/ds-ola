@@ -1,6 +1,6 @@
 import { addons } from "storybook/manager-api";
-import yourTheme from "./dsa-theme";
+import yourTheme from "./ola-theme";
 
 addons.setConfig({
-	theme: yourTheme,
+  theme: yourTheme,
 });

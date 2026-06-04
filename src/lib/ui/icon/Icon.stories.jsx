@@ -3,7 +3,7 @@ import { Icon } from './icon';
 import { icons } from './icons-set';
 
 export default {
-  title: 'Components/Icon',
+  title: 'UI/Icon',
   component: Icon,
   argTypes: {
     // 1. Делаем удобный выпадающий список для выбора имени иконки

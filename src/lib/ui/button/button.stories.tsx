@@ -18,14 +18,7 @@ const meta = {
     // 1. Стандартный тон: показывается для всех вариантов, КРОМЕ ghost
     tone: {
       control: "select",
-      options: [
-        "neutral",
-        "brand",
-        "positive",
-        "warning",
-        "negative",
-        "inverse",
-      ],
+      options: ["neutral", "brand", "positive", "warning", "negative", "inverse"],
       if: { arg: "variant", neq: "ghost" },
     },
     // 2. Тон для ghost: показывается ТОЛЬКО когда выбран вариант ghost
@@ -46,11 +39,35 @@ const meta = {
     disabled: {
       control: "boolean",
     },
-    startIcon: {
-      control: "check",
+        startIcon: {
+      control: {
+        type: "select",
+        labels: {
+          check: "check",
+          undefined: "No icon",
+        },
+      },
+      options: ["check", undefined],
+      mapping: {
+        check: "check",
+        undefined: undefined,
+      },
     },
     endIcon: {
-      control: "check",
+      control: {
+        type: "select",
+        labels: {
+          check: "check",
+          check3: "check2",
+          undefined: "No icon",
+        },
+      },
+      options: ["check", "check3", undefined],
+      mapping: {
+        check: "check",
+        check3: "check2",
+        undefined: undefined,
+      },
     },
   },
 } as Meta<typeof Button>; // Переносим приведение типа в конец через 'as'

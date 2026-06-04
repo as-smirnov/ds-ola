@@ -39,24 +39,25 @@ function App() {
           tone="brand"
           startIcon="check"
           label="Button"
+          // endIcon="check"
         />
         <Button
           size="400"
           variant="primary"
           tone="brand"
           disabled
-          // startIcon="🔥"
+          // startIcon="check"
           label="Button"
-          // endIcon="🚀"
+          // endIcon="check"
         />
         <Button
           size="400"
           variant="primary"
           tone="brand"
           loading
-          // startIcon="🔥"
+          // startIcon="check"
           label="Button"
-          // endIcon="🚀"
+          // endIcon="check"
         />
       </main>
     </ThemeProvider>
