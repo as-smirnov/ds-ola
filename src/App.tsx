@@ -6,7 +6,7 @@ import { Button } from "./lib/ui/button/button";
 
 function App() {
 	// true — светлая тема, false — темная тема
-	const switcher = false; 
+	const switcher = true; 
 
 	return (
 		<ThemeProvider theme={switcher ? lightTheme : darkTheme}>
