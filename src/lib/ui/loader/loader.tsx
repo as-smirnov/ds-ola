@@ -35,7 +35,7 @@ export const StyledLoader = styled.div<{
 
   /* ЦВЕТ ИЗ ТЕМЫ НА СВОЕМ МЕСТЕ */
   color: ${({ theme, $variant, $tone }) => {
-    const themeColor = (theme.components.loader.base as any)[$variant]?.[$tone]?.icon?.color?.default;
+    const themeColor = (theme.components.loader as any)[$variant]?.[$tone]?.icon?.color?.default;
     return themeColor || "inherit";
   }};
 `;

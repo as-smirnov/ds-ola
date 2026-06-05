@@ -64,31 +64,31 @@ export const StyledButton = styled.button<{
   /* 3. ЦВЕТА ИЗ ТЕМЫ (Зависят от комбинации Варианта + Тона + Состояния) */
   &:enabled {
     background-color: ${({ theme, $variant, $tone }) => {
-    const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.bg?.color?.default
+    const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.bg?.color?.default
     return themeColor || "inherit";
     }};
     border-color: ${({ theme, $variant, $tone }) => {
-    const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.border?.color?.default
+    const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.border?.color?.default
     return themeColor || "inherit";
     }};
   }
   &:hover:not(:disabled) {
     background-color: ${({ theme, $variant, $tone }) => {
-    const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.bg?.color?.hover
+    const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.bg?.color?.hover
     return themeColor || "inherit";
     }};
     border-color: ${({ theme, $variant, $tone }) => {
-    const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.border?.color?.hover
+    const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.border?.color?.hover
     return themeColor || "inherit";
     }};
   }
   &:active:not(:disabled) {
     background-color: ${({ theme, $variant, $tone }) => {
-    const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.bg?.color?.press
+    const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.bg?.color?.press
     return themeColor || "inherit";
     }};
     border-color: ${({ theme, $variant, $tone }) => {
-    const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.border?.color?.press
+    const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.border?.color?.press
     return themeColor || "inherit";
     }};
   }
@@ -99,15 +99,15 @@ export const StyledButton = styled.button<{
     /* ФОН КНОПКИ: Если идет загрузка — берем яркий default цвет. Если чистый дизейбл — серый disabled */
     background-color: ${({ theme, $variant, $tone, $loading }) => 
       $loading 
-        ? (theme.components.button.base as any)[$variant]?.[$tone]?.bg?.color?.default || "transparent"
-        : (theme.components.button.base as any)[$variant]?.[$tone]?.bg?.color?.disabled || "transparent"
+        ? (theme.components.button as any)[$variant]?.[$tone]?.bg?.color?.default || "transparent"
+        : (theme.components.button as any)[$variant]?.[$tone]?.bg?.color?.disabled || "transparent"
     };
 
     /* БОРДЕР КНОПКИ: Точно так же разделяем логику загрузки и дизейбла */
     border-color: ${({ theme, $variant, $tone, $loading }) => 
       $loading 
-        ? (theme.components.button.base as any)[$variant]?.[$tone]?.border?.color?.default || "transparent"
-        : (theme.components.button.base as any)[$variant]?.[$tone]?.border?.color?.disabled || "transparent"
+        ? (theme.components.button as any)[$variant]?.[$tone]?.border?.color?.default || "transparent"
+        : (theme.components.button as any)[$variant]?.[$tone]?.border?.color?.disabled || "transparent"
     };
   }
 
@@ -151,25 +151,25 @@ const ButtonLabel = styled.span<{ $size: ButtonSize; $variant: ButtonVariant; $t
 
   ${StyledButton}:enabled & {
     color: ${({ theme, $variant, $tone }) => {
-      const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.label?.color?.default
+      const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.label?.color?.default
       return themeColor || "inherit";
     }};
   }
   ${StyledButton}:hover:not(:disabled) & {
     color: ${({ theme, $variant, $tone }) => {
-      const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.label?.color?.hover
+      const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.label?.color?.hover
       return themeColor || "inherit";
     }};
   }
   ${StyledButton}:active:not(:disabled) & {
     color: ${({ theme, $variant, $tone }) => {
-      const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.label?.color?.press
+      const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.label?.color?.press
       return themeColor || "inherit";
     }};
   }
   ${StyledButton}:disabled & {
     color: ${({ theme, $variant, $tone }) => {
-      const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.label?.color?.disabled
+      const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.label?.color?.disabled
       return themeColor || "inherit";
     }};
   }
@@ -196,25 +196,25 @@ const ButtonIcon = styled.span<{ $size: ButtonSize; $variant: ButtonVariant; $to
   }
   ${StyledButton}:enabled & {
     color: ${({ theme, $variant, $tone }) => {
-      const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.icon?.color?.default
+      const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.icon?.color?.default
       return themeColor || "inherit";
     }};
   }
   ${StyledButton}:hover:not(:disabled) & {
     color: ${({ theme, $variant, $tone }) => {
-      const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.icon?.color?.hover
+      const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.icon?.color?.hover
       return themeColor || "inherit";
     }};
   }
   ${StyledButton}:active:not(:disabled) & {
     color: ${({ theme, $variant, $tone }) => {
-      const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.icon?.color?.press
+      const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.icon?.color?.press
       return themeColor || "inherit";
     }};
   }
   ${StyledButton}:disabled & {
     color: ${({ theme, $variant, $tone }) => {
-      const themeColor = (theme.components.button.base as any)[$variant]?.[$tone]?.icon?.color?.disabled
+      const themeColor = (theme.components.button as any)[$variant]?.[$tone]?.icon?.color?.disabled
       return themeColor || "inherit";
     }};
   }
@@ -242,9 +242,9 @@ export const Button: React.FC<IButtonProps> = ({
   tone = "brand",          // Значение по умолчанию
   loading = false,
   disabled = false,
-  startIcon = "check",
+  startIcon,
   label = "Button",
-  endIcon  = "check",
+  endIcon,
   ...props                 // Сюда автоматически собираются все остальные стандартные пропсы (onClick, id и т.д.)
 }) => {
   

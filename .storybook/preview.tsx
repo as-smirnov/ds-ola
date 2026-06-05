@@ -3,20 +3,20 @@ import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyle as DesignSystemGlobalStyle } from "../src/lib";
 import React from "react";
 
-// 🎨 Специальный оверрайд-стиль для тотального перекрашивания внутренностей Storybook
+// 🎨 Чистый оверрайд-стиль: красит только области контента внутри фрейма
 const StorybookBackgroundOverride = createGlobalStyle<{ isDark: boolean }>`
-  /* Перекрашиваем подложку Canvas и Docs на 100% площади */
-  body, 
   .sb-show-main,
   .docs-story,
   .sb-docs-preview,
-  #storybook-root {
+  .sb-story,
+  #storybook-root:not(body #storybook-root) {
     background-color: ${props => props.isDark 
       ? darkTheme.semantic.colors.bg.layer1 
       : lightTheme.semantic.colors.bg.layer1} !important;
     transition: background-color 0.2s ease;
   }
 `;
+
 
 const preview: Preview = {
   initialGlobals: {
