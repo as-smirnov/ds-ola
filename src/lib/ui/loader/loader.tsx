@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-// 1. Подключаем автоматический компонент иконок
 import { Icon } from "../icon/icon";
 
 export type LoaderSize = "16.Base" | "16.Small";

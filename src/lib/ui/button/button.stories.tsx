@@ -39,7 +39,7 @@ const meta: Meta<typeof Button> = {
     variant: {
       control: "radio",
       options: ["primary", "secondary", "outline", "ghost"],
-      description: "Задает variant для компонента",
+      description: "Задает вариант для компонента",
     },
     tone: {
       control: "select",
