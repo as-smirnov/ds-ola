@@ -1397,7 +1397,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         label: {
           color: {
-            default: semantic.colors.text.warning.onCalm,
+            default: semantic.colors.text.warning.medium,
             hover: semantic.colors.text.warning.onCalm,
             press: semantic.colors.text.warning.onCalm,
             disabled: semantic.colors.text.disabled.default,
@@ -1405,7 +1405,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         icon: {
           color: {
-            default: semantic.colors.icon.warning.onCalm,
+            default: semantic.colors.icon.warning.medium,
             hover: semantic.colors.icon.warning.onCalm,
             press: semantic.colors.icon.warning.onCalm,
             disabled: semantic.colors.icon.disabled.default,
@@ -1413,7 +1413,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         loadingIcon: {
           color: {
-            default: semantic.colors.icon.warning.onCalm,
+            default: semantic.colors.icon.warning.medium,
           },
         },
       },
@@ -1553,7 +1553,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         label: {
           color: {
-            default: semantic.colors.text.added03.onCalm,
+            default: semantic.colors.text.added03.medium,
             hover: semantic.colors.text.added03.onCalm,
             press: semantic.colors.text.added03.onCalm,
             disabled: semantic.colors.text.disabled.default,
@@ -1561,7 +1561,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         icon: {
           color: {
-            default: semantic.colors.icon.added03.onCalm,
+            default: semantic.colors.icon.added03.medium,
             hover: semantic.colors.icon.added03.onCalm,
             press: semantic.colors.icon.added03.onCalm,
             disabled: semantic.colors.icon.disabled.default,
@@ -1569,7 +1569,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         loadingIcon: {
           color: {
-            default: semantic.colors.icon.added03.onCalm,
+            default: semantic.colors.icon.added03.medium,
           },
         },
       },
@@ -1592,7 +1592,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         label: {
           color: {
-            default: semantic.colors.text.added04.onCalm,
+            default: semantic.colors.text.added04.medium,
             hover: semantic.colors.text.added04.onCalm,
             press: semantic.colors.text.added04.onCalm,
             disabled: semantic.colors.text.disabled.default,
@@ -1600,7 +1600,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         icon: {
           color: {
-            default: semantic.colors.icon.added04.onCalm,
+            default: semantic.colors.icon.added04.medium,
             hover: semantic.colors.icon.added04.onCalm,
             press: semantic.colors.icon.added04.onCalm,
             disabled: semantic.colors.icon.disabled.default,
@@ -1608,7 +1608,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         loadingIcon: {
           color: {
-            default: semantic.colors.icon.added04.onCalm,
+            default: semantic.colors.icon.added04.medium,
           },
         },
       },
@@ -2023,7 +2023,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         label: {
           color: {
-            default: semantic.colors.text.warning.onCalm,
+            default: semantic.colors.text.warning.medium,
             hover: semantic.colors.text.warning.onCalm,
             press: semantic.colors.text.warning.onCalm,
             disabled: semantic.colors.text.disabled.default,
@@ -2031,7 +2031,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         icon: {
           color: {
-            default: semantic.colors.icon.warning.onCalm,
+            default: semantic.colors.icon.warning.medium,
             hover: semantic.colors.icon.warning.onCalm,
             press: semantic.colors.icon.warning.onCalm,
             disabled: semantic.colors.icon.disabled.default,
@@ -2039,7 +2039,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         loadingIcon: {
           color: {
-            default: semantic.colors.icon.warning.onCalm,
+            default: semantic.colors.icon.warning.medium,
           },
         },
       },
@@ -2179,7 +2179,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         label: {
           color: {
-            default: semantic.colors.text.added03.onCalm,
+            default: semantic.colors.text.added03.medium,
             hover: semantic.colors.text.added03.onCalm,
             press: semantic.colors.text.added03.onCalm,
             disabled: semantic.colors.text.disabled.default,
@@ -2187,7 +2187,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         icon: {
           color: {
-            default: semantic.colors.icon.added03.onCalm,
+            default: semantic.colors.icon.added03.medium,
             hover: semantic.colors.icon.added03.onCalm,
             press: semantic.colors.icon.added03.onCalm,
             disabled: semantic.colors.icon.disabled.default,
@@ -2195,7 +2195,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         loadingIcon: {
           color: {
-            default: semantic.colors.icon.added03.onCalm,
+            default: semantic.colors.icon.added03.medium,
           },
         },
       },
@@ -2218,7 +2218,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         label: {
           color: {
-            default: semantic.colors.text.added04.onCalm,
+            default: semantic.colors.text.added04.medium,
             hover: semantic.colors.text.added04.onCalm,
             press: semantic.colors.text.added04.onCalm,
             disabled: semantic.colors.text.disabled.default,
@@ -2226,7 +2226,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         icon: {
           color: {
-            default: semantic.colors.icon.added04.onCalm,
+            default: semantic.colors.icon.added04.medium,
             hover: semantic.colors.icon.added04.onCalm,
             press: semantic.colors.icon.added04.onCalm,
             disabled: semantic.colors.icon.disabled.default,
@@ -2234,7 +2234,7 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         },
         loadingIcon: {
           color: {
-            default: semantic.colors.icon.added04.onCalm,
+            default: semantic.colors.icon.added04.medium,
           },
         },
       },

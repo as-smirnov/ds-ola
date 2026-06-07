@@ -257,7 +257,7 @@ export const createLoaderTokens = (semantic: SemanticTemplate) => {
       warning: {
         icon: {
           color: {
-            default: semantic.colors.icon.warning.onCalm,
+            default: semantic.colors.icon.warning.medium,
           },
         },
       },
@@ -285,14 +285,14 @@ export const createLoaderTokens = (semantic: SemanticTemplate) => {
       added03: {
         icon: {
           color: {
-            default: semantic.colors.icon.added03.onCalm,
+            default: semantic.colors.icon.added03.medium,
           },
         },
       },
       added04: {
         icon: {
           color: {
-            default: semantic.colors.icon.added04.onCalm,
+            default: semantic.colors.icon.added04.medium,
           },
         },
       },
