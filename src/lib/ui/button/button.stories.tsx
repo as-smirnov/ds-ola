@@ -43,7 +43,7 @@ const meta: Meta<typeof Button> = {
     },
     tone: {
       control: "select",
-      options: ["neutral", "brand", "positive", "warning", "negative", "inverse"],
+      options: ["neutral", "brand", "positive", "warning", "negative", "inverse", "added01", "added02", "added03", "added04", "added05", "added06", "added07", "added08", "added09", "added10", "added11"],
       description: "Цветовая схема компонента",
     },
     loading: {

@@ -4,7 +4,7 @@ import { Icon } from "../icon/icon";
 
 export type LoaderSize = "16.Base" | "16.Small";
 export type LoaderVariant = "primary" | "secondary" | "ghost";
-export type LoaderTone = "neutral" | "brand" | "positive" | "warning" | "negative" | "inverse";
+export type LoaderTone = "neutral" | "brand" | "positive" | "warning" | "negative" | "inverse" | "added01" | "added02" | "added03" | "added04" | "added05" | "added06" | "added07" | "added08" | "added09" | "added10" | "added11";
 
 // 2. КАРТА РАЗМЕРОВ
 const loaderSizes: Record<LoaderSize, string> = {

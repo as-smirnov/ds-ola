@@ -12,7 +12,7 @@ import { Loader } from "../loader/loader";
 // Названия строго с большой буквы, так как в файле theme.ts они написаны так же.
 export type ButtonSize = "300" | "400";
 export type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
-export type ButtonTone = "neutral" | "brand" | "positive" | "warning" | "negative" | "inverse";
+export type ButtonTone = "neutral" | "brand" | "positive" | "warning" | "negative" | "inverse" | "added01" | "added02" | "added03" | "added04" | "added05" | "added06" | "added07" | "added08" | "added09" | "added10" | "added11";
 
 // Описываем, какие пропсы (свойства) внешние разработчики могут передать в кнопку.
 // `extends` автоматически добавляет сюда все стандартные свойства HTML-кнопки (например, disabled, onClick).

@@ -204,6 +204,435 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
           },
         },
       },
+      added01: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added01.loud.default,
+            hover: semantic.colors.bg.added01.loud.hover,
+            press: semantic.colors.bg.added01.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added01.onLoud,
+            hover: semantic.colors.text.added01.onLoud,
+            press: semantic.colors.text.added01.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added01.onLoud,
+            hover: semantic.colors.icon.added01.onLoud,
+            press: semantic.colors.icon.added01.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added01.onLoud,
+          },
+        },
+      },
+      added02: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added02.loud.default,
+            hover: semantic.colors.bg.added02.loud.hover,
+            press: semantic.colors.bg.added02.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added02.onLoud,
+            hover: semantic.colors.text.added02.onLoud,
+            press: semantic.colors.text.added02.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added02.onLoud,
+            hover: semantic.colors.icon.added02.onLoud,
+            press: semantic.colors.icon.added02.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added02.onLoud,
+          },
+        },
+      },
+      added03: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added03.loud.default,
+            hover: semantic.colors.bg.added03.loud.hover,
+            press: semantic.colors.bg.added03.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added03.onLoud,
+            hover: semantic.colors.text.added03.onLoud,
+            press: semantic.colors.text.added03.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added03.onLoud,
+            hover: semantic.colors.icon.added03.onLoud,
+            press: semantic.colors.icon.added03.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added03.onLoud,
+          },
+        },
+      },
+      added04: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added04.loud.default,
+            hover: semantic.colors.bg.added04.loud.hover,
+            press: semantic.colors.bg.added04.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added04.onLoud,
+            hover: semantic.colors.text.added04.onLoud,
+            press: semantic.colors.text.added04.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added04.onLoud,
+            hover: semantic.colors.icon.added04.onLoud,
+            press: semantic.colors.icon.added04.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added04.onLoud,
+          },
+        },
+      },
+      added05: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added05.loud.default,
+            hover: semantic.colors.bg.added05.loud.hover,
+            press: semantic.colors.bg.added05.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added05.onLoud,
+            hover: semantic.colors.text.added05.onLoud,
+            press: semantic.colors.text.added05.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added05.onLoud,
+            hover: semantic.colors.icon.added05.onLoud,
+            press: semantic.colors.icon.added05.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added05.onLoud,
+          },
+        },
+      },
+      added06: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added06.loud.default,
+            hover: semantic.colors.bg.added06.loud.hover,
+            press: semantic.colors.bg.added06.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added06.onLoud,
+            hover: semantic.colors.text.added06.onLoud,
+            press: semantic.colors.text.added06.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added06.onLoud,
+            hover: semantic.colors.icon.added06.onLoud,
+            press: semantic.colors.icon.added06.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added06.onLoud,
+          },
+        },
+      },
+      added07: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added07.loud.default,
+            hover: semantic.colors.bg.added07.loud.hover,
+            press: semantic.colors.bg.added07.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added07.onLoud,
+            hover: semantic.colors.text.added07.onLoud,
+            press: semantic.colors.text.added07.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added07.onLoud,
+            hover: semantic.colors.icon.added07.onLoud,
+            press: semantic.colors.icon.added07.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added07.onLoud,
+          },
+        },
+      },
+      added08: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added08.loud.default,
+            hover: semantic.colors.bg.added08.loud.hover,
+            press: semantic.colors.bg.added08.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added08.onLoud,
+            hover: semantic.colors.text.added08.onLoud,
+            press: semantic.colors.text.added08.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added08.onLoud,
+            hover: semantic.colors.icon.added08.onLoud,
+            press: semantic.colors.icon.added08.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added08.onLoud,
+          },
+        },
+      },
+      added09: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added09.loud.default,
+            hover: semantic.colors.bg.added09.loud.hover,
+            press: semantic.colors.bg.added09.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added09.onLoud,
+            hover: semantic.colors.text.added09.onLoud,
+            press: semantic.colors.text.added09.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added09.onLoud,
+            hover: semantic.colors.icon.added09.onLoud,
+            press: semantic.colors.icon.added09.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added09.onLoud,
+          },
+        },
+      },
+      added10: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added10.loud.default,
+            hover: semantic.colors.bg.added10.loud.hover,
+            press: semantic.colors.bg.added10.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added10.onLoud,
+            hover: semantic.colors.text.added10.onLoud,
+            press: semantic.colors.text.added10.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added10.onLoud,
+            hover: semantic.colors.icon.added10.onLoud,
+            press: semantic.colors.icon.added10.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added10.onLoud,
+          },
+        },
+      },
+      added11: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added11.loud.default,
+            hover: semantic.colors.bg.added11.loud.hover,
+            press: semantic.colors.bg.added11.loud.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added11.onLoud,
+            hover: semantic.colors.text.added11.onLoud,
+            press: semantic.colors.text.added11.onLoud,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added11.onLoud,
+            hover: semantic.colors.icon.added11.onLoud,
+            press: semantic.colors.icon.added11.onLoud,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added11.onLoud,
+          },
+        },
+      },
     },
     secondary: {
       neutral: {
@@ -398,6 +827,435 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         loadingIcon: {
           color: {
             default: semantic.colors.icon.negative.onCalm,
+          },
+        },
+      },
+      added01: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added01.calm.default,
+            hover: semantic.colors.bg.added01.calm.hover,
+            press: semantic.colors.bg.added01.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added01.onCalm,
+            hover: semantic.colors.text.added01.onCalm,
+            press: semantic.colors.text.added01.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added01.onCalm,
+            hover: semantic.colors.icon.added01.onCalm,
+            press: semantic.colors.icon.added01.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added01.onCalm,
+          },
+        },
+      },
+      added02: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added02.calm.default,
+            hover: semantic.colors.bg.added02.calm.hover,
+            press: semantic.colors.bg.added02.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added02.onCalm,
+            hover: semantic.colors.text.added02.onCalm,
+            press: semantic.colors.text.added02.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added02.onCalm,
+            hover: semantic.colors.icon.added02.onCalm,
+            press: semantic.colors.icon.added02.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added02.onCalm,
+          },
+        },
+      },
+      added03: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added03.calm.default,
+            hover: semantic.colors.bg.added03.calm.hover,
+            press: semantic.colors.bg.added03.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added03.onCalm,
+            hover: semantic.colors.text.added03.onCalm,
+            press: semantic.colors.text.added03.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added03.onCalm,
+            hover: semantic.colors.icon.added03.onCalm,
+            press: semantic.colors.icon.added03.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added03.onCalm,
+          },
+        },
+      },
+      added04: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added04.calm.default,
+            hover: semantic.colors.bg.added04.calm.hover,
+            press: semantic.colors.bg.added04.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added04.onCalm,
+            hover: semantic.colors.text.added04.onCalm,
+            press: semantic.colors.text.added04.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added04.onCalm,
+            hover: semantic.colors.icon.added04.onCalm,
+            press: semantic.colors.icon.added04.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added04.onCalm,
+          },
+        },
+      },
+      added05: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added05.calm.default,
+            hover: semantic.colors.bg.added05.calm.hover,
+            press: semantic.colors.bg.added05.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added05.onCalm,
+            hover: semantic.colors.text.added05.onCalm,
+            press: semantic.colors.text.added05.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added05.onCalm,
+            hover: semantic.colors.icon.added05.onCalm,
+            press: semantic.colors.icon.added05.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added05.onCalm,
+          },
+        },
+      },
+      added06: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added06.calm.default,
+            hover: semantic.colors.bg.added06.calm.hover,
+            press: semantic.colors.bg.added06.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added06.onCalm,
+            hover: semantic.colors.text.added06.onCalm,
+            press: semantic.colors.text.added06.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added06.onCalm,
+            hover: semantic.colors.icon.added06.onCalm,
+            press: semantic.colors.icon.added06.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added06.onCalm,
+          },
+        },
+      },
+      added07: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added07.calm.default,
+            hover: semantic.colors.bg.added07.calm.hover,
+            press: semantic.colors.bg.added07.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added07.onCalm,
+            hover: semantic.colors.text.added07.onCalm,
+            press: semantic.colors.text.added07.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added07.onCalm,
+            hover: semantic.colors.icon.added07.onCalm,
+            press: semantic.colors.icon.added07.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added07.onCalm,
+          },
+        },
+      },
+      added08: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added08.calm.default,
+            hover: semantic.colors.bg.added08.calm.hover,
+            press: semantic.colors.bg.added08.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added08.onCalm,
+            hover: semantic.colors.text.added08.onCalm,
+            press: semantic.colors.text.added08.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added08.onCalm,
+            hover: semantic.colors.icon.added08.onCalm,
+            press: semantic.colors.icon.added08.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added08.onCalm,
+          },
+        },
+      },
+      added09: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added09.calm.default,
+            hover: semantic.colors.bg.added09.calm.hover,
+            press: semantic.colors.bg.added09.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added09.onCalm,
+            hover: semantic.colors.text.added09.onCalm,
+            press: semantic.colors.text.added09.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added09.onCalm,
+            hover: semantic.colors.icon.added09.onCalm,
+            press: semantic.colors.icon.added09.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added09.onCalm,
+          },
+        },
+      },
+      added10: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added10.calm.default,
+            hover: semantic.colors.bg.added10.calm.hover,
+            press: semantic.colors.bg.added10.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added10.onCalm,
+            hover: semantic.colors.text.added10.onCalm,
+            press: semantic.colors.text.added10.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added10.onCalm,
+            hover: semantic.colors.icon.added10.onCalm,
+            press: semantic.colors.icon.added10.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added10.onCalm,
+          },
+        },
+      },
+      added11: {
+        bg: {
+          color: {
+            default: semantic.colors.bg.added11.calm.default,
+            hover: semantic.colors.bg.added11.calm.hover,
+            press: semantic.colors.bg.added11.calm.press,
+            disabled: semantic.colors.bg.disabled.calm.default,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added11.onCalm,
+            hover: semantic.colors.text.added11.onCalm,
+            press: semantic.colors.text.added11.onCalm,
+            disabled: semantic.colors.text.disabled.onCalm,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added11.onCalm,
+            hover: semantic.colors.icon.added11.onCalm,
+            press: semantic.colors.icon.added11.onCalm,
+            disabled: semantic.colors.icon.disabled.onCalm,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added11.onCalm,
           },
         },
       },
@@ -598,6 +1456,435 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
           },
         },
       },
+      added01: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added01.calm.default,
+            press: semantic.colors.bg.added01.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added01.calm.medium,
+            hover: semantic.colors.border.added01.calm.medium,
+            press: semantic.colors.border.added01.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added01.onCalm,
+            hover: semantic.colors.text.added01.onCalm,
+            press: semantic.colors.text.added01.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added01.onCalm,
+            hover: semantic.colors.icon.added01.onCalm,
+            press: semantic.colors.icon.added01.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added01.onCalm,
+          },
+        },
+      },
+      added02: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added02.calm.default,
+            press: semantic.colors.bg.added02.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added02.calm.medium,
+            hover: semantic.colors.border.added02.calm.medium,
+            press: semantic.colors.border.added02.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added02.onCalm,
+            hover: semantic.colors.text.added02.onCalm,
+            press: semantic.colors.text.added02.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added02.onCalm,
+            hover: semantic.colors.icon.added02.onCalm,
+            press: semantic.colors.icon.added02.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added02.onCalm,
+          },
+        },
+      },
+      added03: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added03.calm.default,
+            press: semantic.colors.bg.added03.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added03.calm.medium,
+            hover: semantic.colors.border.added03.calm.medium,
+            press: semantic.colors.border.added03.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added03.onCalm,
+            hover: semantic.colors.text.added03.onCalm,
+            press: semantic.colors.text.added03.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added03.onCalm,
+            hover: semantic.colors.icon.added03.onCalm,
+            press: semantic.colors.icon.added03.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added03.onCalm,
+          },
+        },
+      },
+      added04: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added04.calm.default,
+            press: semantic.colors.bg.added04.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added04.calm.medium,
+            hover: semantic.colors.border.added04.calm.medium,
+            press: semantic.colors.border.added04.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added04.onCalm,
+            hover: semantic.colors.text.added04.onCalm,
+            press: semantic.colors.text.added04.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added04.onCalm,
+            hover: semantic.colors.icon.added04.onCalm,
+            press: semantic.colors.icon.added04.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added04.onCalm,
+          },
+        },
+      },
+      added05: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added05.calm.default,
+            press: semantic.colors.bg.added05.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added05.calm.medium,
+            hover: semantic.colors.border.added05.calm.medium,
+            press: semantic.colors.border.added05.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added05.onCalm,
+            hover: semantic.colors.text.added05.onCalm,
+            press: semantic.colors.text.added05.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added05.onCalm,
+            hover: semantic.colors.icon.added05.onCalm,
+            press: semantic.colors.icon.added05.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added05.onCalm,
+          },
+        },
+      },
+      added06: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added06.calm.default,
+            press: semantic.colors.bg.added06.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added06.calm.medium,
+            hover: semantic.colors.border.added06.calm.medium,
+            press: semantic.colors.border.added06.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added06.onCalm,
+            hover: semantic.colors.text.added06.onCalm,
+            press: semantic.colors.text.added06.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added06.onCalm,
+            hover: semantic.colors.icon.added06.onCalm,
+            press: semantic.colors.icon.added06.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added06.onCalm,
+          },
+        },
+      },
+      added07: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added07.calm.default,
+            press: semantic.colors.bg.added07.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added07.calm.medium,
+            hover: semantic.colors.border.added07.calm.medium,
+            press: semantic.colors.border.added07.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added07.onCalm,
+            hover: semantic.colors.text.added07.onCalm,
+            press: semantic.colors.text.added07.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added07.onCalm,
+            hover: semantic.colors.icon.added07.onCalm,
+            press: semantic.colors.icon.added07.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added07.onCalm,
+          },
+        },
+      },
+      added08: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added08.calm.default,
+            press: semantic.colors.bg.added08.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added08.calm.medium,
+            hover: semantic.colors.border.added08.calm.medium,
+            press: semantic.colors.border.added08.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added08.onCalm,
+            hover: semantic.colors.text.added08.onCalm,
+            press: semantic.colors.text.added08.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added08.onCalm,
+            hover: semantic.colors.icon.added08.onCalm,
+            press: semantic.colors.icon.added08.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added08.onCalm,
+          },
+        },
+      },
+      added09: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added09.calm.default,
+            press: semantic.colors.bg.added09.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added09.calm.medium,
+            hover: semantic.colors.border.added09.calm.medium,
+            press: semantic.colors.border.added09.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added09.onCalm,
+            hover: semantic.colors.text.added09.onCalm,
+            press: semantic.colors.text.added09.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added09.onCalm,
+            hover: semantic.colors.icon.added09.onCalm,
+            press: semantic.colors.icon.added09.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added09.onCalm,
+          },
+        },
+      },
+      added10: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added10.calm.default,
+            press: semantic.colors.bg.added10.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added10.calm.medium,
+            hover: semantic.colors.border.added10.calm.medium,
+            press: semantic.colors.border.added10.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added10.onCalm,
+            hover: semantic.colors.text.added10.onCalm,
+            press: semantic.colors.text.added10.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added10.onCalm,
+            hover: semantic.colors.icon.added10.onCalm,
+            press: semantic.colors.icon.added10.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added10.onCalm,
+          },
+        },
+      },
+      added11: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added11.calm.default,
+            press: semantic.colors.bg.added11.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.border.added11.calm.medium,
+            hover: semantic.colors.border.added11.calm.medium,
+            press: semantic.colors.border.added11.calm.medium,
+            disabled: semantic.colors.border.neutral.calm.medium,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added11.onCalm,
+            hover: semantic.colors.text.added11.onCalm,
+            press: semantic.colors.text.added11.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added11.onCalm,
+            hover: semantic.colors.icon.added11.onCalm,
+            press: semantic.colors.icon.added11.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added11.onCalm,
+          },
+        },
+      },
     },
     ghost: {
       neutral: {
@@ -792,6 +2079,435 @@ export const createButtonTokens = (semantic: SemanticTemplate) => {
         loadingIcon: {
           color: {
             default: semantic.colors.icon.negative.onCalm,
+          },
+        },
+      },
+      added01: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added01.calm.default,
+            press: semantic.colors.bg.added01.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added01.onCalm,
+            hover: semantic.colors.text.added01.onCalm,
+            press: semantic.colors.text.added01.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added01.onCalm,
+            hover: semantic.colors.icon.added01.onCalm,
+            press: semantic.colors.icon.added01.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added01.onCalm,
+          },
+        },
+      },
+      added02: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added02.calm.default,
+            press: semantic.colors.bg.added02.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added02.onCalm,
+            hover: semantic.colors.text.added02.onCalm,
+            press: semantic.colors.text.added02.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added02.onCalm,
+            hover: semantic.colors.icon.added02.onCalm,
+            press: semantic.colors.icon.added02.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added02.onCalm,
+          },
+        },
+      },
+      added03: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added03.calm.default,
+            press: semantic.colors.bg.added03.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added03.onCalm,
+            hover: semantic.colors.text.added03.onCalm,
+            press: semantic.colors.text.added03.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added03.onCalm,
+            hover: semantic.colors.icon.added03.onCalm,
+            press: semantic.colors.icon.added03.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added03.onCalm,
+          },
+        },
+      },
+      added04: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added04.calm.default,
+            press: semantic.colors.bg.added04.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added04.onCalm,
+            hover: semantic.colors.text.added04.onCalm,
+            press: semantic.colors.text.added04.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added04.onCalm,
+            hover: semantic.colors.icon.added04.onCalm,
+            press: semantic.colors.icon.added04.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added04.onCalm,
+          },
+        },
+      },
+      added05: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added05.calm.default,
+            press: semantic.colors.bg.added05.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added05.onCalm,
+            hover: semantic.colors.text.added05.onCalm,
+            press: semantic.colors.text.added05.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added05.onCalm,
+            hover: semantic.colors.icon.added05.onCalm,
+            press: semantic.colors.icon.added05.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added05.onCalm,
+          },
+        },
+      },
+      added06: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added06.calm.default,
+            press: semantic.colors.bg.added06.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added06.onCalm,
+            hover: semantic.colors.text.added06.onCalm,
+            press: semantic.colors.text.added06.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added06.onCalm,
+            hover: semantic.colors.icon.added06.onCalm,
+            press: semantic.colors.icon.added06.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added06.onCalm,
+          },
+        },
+      },
+      added07: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added07.calm.default,
+            press: semantic.colors.bg.added07.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added07.onCalm,
+            hover: semantic.colors.text.added07.onCalm,
+            press: semantic.colors.text.added07.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added07.onCalm,
+            hover: semantic.colors.icon.added07.onCalm,
+            press: semantic.colors.icon.added07.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added07.onCalm,
+          },
+        },
+      },
+      added08: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added08.calm.default,
+            press: semantic.colors.bg.added08.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added08.onCalm,
+            hover: semantic.colors.text.added08.onCalm,
+            press: semantic.colors.text.added08.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added08.onCalm,
+            hover: semantic.colors.icon.added08.onCalm,
+            press: semantic.colors.icon.added08.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added08.onCalm,
+          },
+        },
+      },
+      added09: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added09.calm.default,
+            press: semantic.colors.bg.added09.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added09.onCalm,
+            hover: semantic.colors.text.added09.onCalm,
+            press: semantic.colors.text.added09.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added09.onCalm,
+            hover: semantic.colors.icon.added09.onCalm,
+            press: semantic.colors.icon.added09.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added09.onCalm,
+          },
+        },
+      },
+      added10: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added10.calm.default,
+            press: semantic.colors.bg.added10.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added10.onCalm,
+            hover: semantic.colors.text.added10.onCalm,
+            press: semantic.colors.text.added10.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added10.onCalm,
+            hover: semantic.colors.icon.added10.onCalm,
+            press: semantic.colors.icon.added10.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added10.onCalm,
+          },
+        },
+      },
+      added11: {
+        bg: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.bg.added11.calm.default,
+            press: semantic.colors.bg.added11.calm.hover,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        border: {
+          color: {
+            default: semantic.colors.other.none,
+            hover: semantic.colors.other.none,
+            press: semantic.colors.other.none,
+            disabled: semantic.colors.other.none,
+          },
+        },
+        label: {
+          color: {
+            default: semantic.colors.text.added11.onCalm,
+            hover: semantic.colors.text.added11.onCalm,
+            press: semantic.colors.text.added11.onCalm,
+            disabled: semantic.colors.text.disabled.default,
+          },
+        },
+        icon: {
+          color: {
+            default: semantic.colors.icon.added11.onCalm,
+            hover: semantic.colors.icon.added11.onCalm,
+            press: semantic.colors.icon.added11.onCalm,
+            disabled: semantic.colors.icon.disabled.default,
+          },
+        },
+        loadingIcon: {
+          color: {
+            default: semantic.colors.icon.added11.onCalm,
           },
         },
       },
