@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Icon } from "../icon/icon"; // Подтягиваем наш умный компонент иконок
+import { Icon } from "../icon/icon";
 import { Loader } from "../loader/loader";
 
 // =1==========================================================================
@@ -290,14 +290,12 @@ export const Button: React.FC<IButtonProps> = ({
         {startIcon && (
           /* Передаем пропсы внутрь коробочки, чтобы она знала, в какой цвет покраситься! */
           <ButtonIcon $size={size} $variant={variant} $tone={tone}>
-            {/* Временная заглушка. На следующем этапе мы заменим её на настоящий <IconComponent /> */}
             <Icon 
               name={startIcon as any} 
               // Наш переводчик размеров: кнопка 400 вызывает большую сетку 16.Base, 
               // а кнопка 300 вызывает меньшую сетку 16.Small
               size={size === "400" ? "16.Base" : "16.Small"} 
             />
-
           </ButtonIcon>
         )}
         
@@ -307,18 +305,13 @@ export const Button: React.FC<IButtonProps> = ({
         </ButtonLabel>
         
         {/* Иконка СПРАВА */}
+        {/* Исправлено: убрали лишнюю внутреннюю матрёшку условий и тегов, закрыли тег вовремя */}
         {endIcon && (
           <ButtonIcon $size={size} $variant={variant} $tone={tone}>
-            {/* Иконка СПРАВА */}
-            {endIcon && (
-              <ButtonIcon $size={size} $variant={variant} $tone={tone}>
-                <Icon 
-                  name={endIcon as any} 
-                  size={size === "400" ? "16.Base" : "16.Small"} 
-                />
-  </ButtonIcon>
-)}
-
+            <Icon 
+              name={endIcon as any} 
+              size={size === "400" ? "16.Base" : "16.Small"} 
+            />
           </ButtonIcon>
         )}
         

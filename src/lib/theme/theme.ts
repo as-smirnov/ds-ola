@@ -1,6 +1,8 @@
 import { primitives } from "./primitives";
 import { semanticLight, semanticDark } from "./semantic";
+import { createBadgeTokens } from "./components/badge-tokens";
 import { createButtonTokens } from "./components/button-tokens";
+import { createButtonIconTokens } from "./components/button-icon-tokens";
 import { createLoaderTokens } from "./components/loader-tokens";
 
 // 🧠 1. Структура типа нашей темы
@@ -8,7 +10,9 @@ export type AppTheme = {
   primitives: typeof primitives;
   semantic: any;
   components: {
-    button: any;
+    badge: ReturnType<typeof createBadgeTokens>;
+    button: ReturnType<typeof createButtonTokens>;
+    buttonIcon: ReturnType<typeof createButtonIconTokens>;
     loader: any;
   };
   transitionFast: (properties: string[]) => string;
@@ -17,8 +21,8 @@ export type AppTheme = {
 // 🟦 2. Базовая функция плавности (Исправлен путь: убран несуществующий узел .motion)
 const createTransitionFast = (semanticSrc: any) => {
   return (properties: string[]): string => {
-    const duration = semanticSrc.duration.fast; // 👈 Исправлено! Читаем напрямую из корня семантики
-    const easing = semanticSrc.easing.interactive; // 👈 Исправлено!
+    const duration = semanticSrc.duration.fast;
+    const easing = semanticSrc.easing.interactive;
     return properties.map((prop) => `${prop} ${duration} ${easing}`).join(", ");
   };
 };
@@ -29,7 +33,9 @@ const makeLightTheme = (): AppTheme => {
     primitives,
     semantic: semanticLight,
     components: {
+      badge: createBadgeTokens(semanticLight as any),
       button: createButtonTokens(semanticLight as any),
+      buttonIcon: createButtonIconTokens(semanticLight as any),
       loader: createLoaderTokens(semanticLight as any),
     },
     transitionFast: createTransitionFast(semanticLight),
@@ -42,7 +48,9 @@ const makeDarkTheme = (): AppTheme => {
     primitives,
     semantic: semanticDark,
     components: {
+      badge: createBadgeTokens(semanticDark as any),
       button: createButtonTokens(semanticDark as any),
+      buttonIcon: createButtonIconTokens(semanticDark as any),
       loader: createLoaderTokens(semanticDark as any),
     },
     transitionFast: createTransitionFast(semanticDark),

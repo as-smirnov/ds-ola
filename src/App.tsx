@@ -3,6 +3,8 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle, lightTheme, darkTheme } from "./lib/theme";
 import { Loader } from "./lib/ui/loader/loader";
 import { Button } from "./lib/ui/button/button";
+import { Badge } from "./lib/ui/badge/badge";
+import { ButtonIcon } from "./lib/ui/button-icon/button-icon";
 
 function App() {
   const [theme, setTheme] = React.useState<"light" | "dark">("light");
@@ -33,7 +35,7 @@ function App() {
 					variant="secondary"
 					tone="brand"
 				/> */}
-        <Button
+        {/* <Button
           size="400"
           variant="primary"
           tone="brand"
@@ -58,6 +60,24 @@ function App() {
           // startIcon="check"
           label="Button"
           // endIcon="check"
+        /> */}
+        {/* <ButtonIcon
+          size="400"
+          variant="primary"
+          tone="brand"
+          // loading
+          // disabled
+          icon="check"
+        /> */}
+        <Badge
+          size="200"
+          variant="primary"
+          tone="brand"
+          // loading
+          // disabled
+          startIcon="check"
+          label="Button"
+          endIcon="check"
         />
       </main>
     </ThemeProvider>

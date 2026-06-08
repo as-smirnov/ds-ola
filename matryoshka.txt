@@ -1,223 +1,255 @@
 Все папки и все файлы пишутся в стиле "kebab-case"
 
+⚪️ - Пока ничего нет
+🟠 - Ведуться работы
+🟢 - Актуальный код
+
 Мой проект на GitHub:
 https://github.com/as-smirnov/ds-ola
 
 Мой код проекта в Gits:
 ds-ola: {
-    .storybook: {
-        ds-ola / .storybook / main.ts
+    🟢.storybook: {
+        🟢 ds-ola / .storybook / main.ts
         https://gist.github.com/as-smirnov/4726fdcbb3f4adc3df5520b9d91a8e0c
 
-        ds-ola / .storybook / manager-head.html
+        🟢 ds-ola / .storybook / manager-head.html
         https://gist.github.com/as-smirnov/5ebb07a9f44c7d758eb5654eec3e6889
 
-        ds-ola / .storybook / manager.ts
+        🟢 ds-ola / .storybook / manager.ts
         https://gist.github.com/as-smirnov/3530ce2382139bed6e34b012377b8ef7
 
-        ds-ola / .storybook / ola-theme.ts
+        🟢 ds-ola / .storybook / ola-theme.ts
         https://gist.github.com/as-smirnov/88fac4ed3fa965e48f7a5537cdb4d8b2
 
-        ds-ola / .storybook / preview.tsx
+        🟢 ds-ola / .storybook / preview.tsx
         https://gist.github.com/as-smirnov/ca07108ef6d53d6668a90ce3a652ff47
     },
-    .vscode: {},
-    dist: {},
-    node_modules: {},
-    src: {
-        assets: {
-            fonts: {
-                ds-ola / src / assets / fonts
+    ⚪️ .vscode: {},
+    ⚪️ dist: {},
+    ⚪️ node_modules: {},
+    🟠 src: {
+        🟢 assets: {
+            🟢 fonts: {
+                🟢 ds-ola / src / assets / fonts
                 Загружен шрифт "Inter-Variable.woff2"
             },
         },
-        lib: {
-            theme: {
-                components: {
-                    ds-ola / src / lib / theme / components / button-tokens.ts
+        🟠lib: {
+            🟠 theme: {
+                🟠 components: {
+                    🟢 ds-ola / src / lib / theme / components / badge-tokens.ts
+                    https://gist.github.com/as-smirnov/78ee2ee1537f3f0611296c3538a7fcd8
+                    
+                    🟢 ds-ola / src / lib / theme / components / button-icon-tokens.ts
+                    https://gist.github.com/as-smirnov/b29628f51276deb86a115e03f672ae15
+
+                    🟢 ds-ola / src / lib / theme / components / button-tokens.ts
                     https://gist.github.com/as-smirnov/b3e6bce116aafe7bf50f08103302a942
                     
-                    ds-ola / src / lib / theme / components / index.ts
+                    ⚪️ ds-ola / src / lib / theme / components / checkbox-tokens.ts
+                    
+                    🟠 ds-ola / src / lib / theme / components / index.ts
                     https://gist.github.com/as-smirnov/073cf025d1b2248d3541f7323f31ab3f
 
-                    ds-ola / src / lib / theme / components / loader-tokens.ts
+                    🟢 ds-ola / src / lib / theme / components / loader-tokens.ts
                     https://gist.github.com/as-smirnov/be0ae8de84b5d8edfdec0eafa3f9c539
+
+                    ⚪️ ds-ola / src / lib / theme / components / 
+                    ⚪️ ds-ola / src / lib / theme / components / 
+                    ⚪️ ds-ola / src / lib / theme / components / 
                 },
-                primitives: {
-                    ds-ola / src / lib / theme / primitives / index.ts
+                🟢 primitives: {
+                    🟢 ds-ola / src / lib / theme / primitives / index.ts
                     https://gist.github.com/as-smirnov/4475625f9b1ca34c60c05e0f1de6e908
 
-                    ds-ola / src / lib / theme / primitives / motion.ts
+                    🟢 ds-ola / src / lib / theme / primitives / motion.ts
                     https://gist.github.com/as-smirnov/ffecff1fa88282eaff35ca5aa80454ff
 
-                    ds-ola / src / lib / theme / primitives / palette.ts
+                    🟢 ds-ola / src / lib / theme / primitives / palette.ts
                     https://gist.github.com/as-smirnov/e596ad9d853ac875efa0b4ed1ad800d6
 
-                    ds-ola / src / lib / theme / primitives / percents.ts
+                    🟢 ds-ola / src / lib / theme / primitives / percents.ts
                     https://gist.github.com/as-smirnov/115077f914ce4aade044dbad6dd6776b
 
-                    ds-ola / src / lib / theme / primitives / pixels.ts
+                    🟢 ds-ola / src / lib / theme / primitives / pixels.ts
                     https://gist.github.com/as-smirnov/030425abb108a0c8065b8675c3b6ce06
 
-                    ds-ola / src / lib / theme / primitives / typography.ts
+                    🟢 ds-ola / src / lib / theme / primitives / typography.ts
                     https://gist.github.com/as-smirnov/c3084bfc558f045ca08b3ab1e88c18ad
 
-                    ds-ola / src / lib / theme / primitives / z-index.ts
+                    ⚪️ ds-ola / src / lib / theme / primitives / z-index.ts
+                    Пока что ничего нет
                 },
-                semantic: {
-                    ds-ola / src / lib / theme / semantic / colors.ts
+                🟢 semantic: {
+                    🟢 ds-ola / src / lib / theme / semantic / colors.ts
                     https://gist.github.com/as-smirnov/236bfb4c692ab3bb4b88ac76cf56fa1e
 
-                    ds-ola / src / lib / theme / semantic / index.ts
+                    🟢 ds-ola / src / lib / theme / semantic / index.ts
                     https://gist.github.com/as-smirnov/815196853ea3f113953cce644a0a8517
                     
-                    ds-ola / src / lib / theme / semantic / motion.ts 
+                    🟢 ds-ola / src / lib / theme / semantic / motion.ts 
                     https://gist.github.com/as-smirnov/ffec92082e06fc9990b063530743a843
 
-                    ds-ola / src / lib / theme / semantic / opacity.ts
+                    🟢 ds-ola / src / lib / theme / semantic / opacity.ts
                     https://gist.github.com/as-smirnov/daeeee7db92a62d3753637dcbadf5939
 
-                    ds-ola / src / lib / theme / semantic / radius.ts
+                    🟢 ds-ola / src / lib / theme / semantic / radius.ts
                     https://gist.github.com/as-smirnov/3ec62f9043eb6d82211a633316889cf8
 
-                    ds-ola / src / lib / theme / semantic / sizes.ts
+                    🟢 ds-ola / src / lib / theme / semantic / sizes.ts
                     https://gist.github.com/as-smirnov/48205e1a467f854223391cea3b66b0c9
 
-                    ds-ola / src / lib / theme / semantic / spaces.ts
+                    🟢 ds-ola / src / lib / theme / semantic / spaces.ts
                     https://gist.github.com/as-smirnov/fbda0a0f567460081b3f3c218e981a92
 
-                    ds-ola / src / lib / theme / semantic / strokes.ts
+                    🟢 ds-ola / src / lib / theme / semantic / strokes.ts
                     https://gist.github.com/as-smirnov/505d68b4e202896d726ef22b53bc6c0e
 
-                    ds-ola / src / lib / theme / semantic / typography.ts
+                    🟢 ds-ola / src / lib / theme / semantic / typography.ts
                     https://gist.github.com/as-smirnov/8a538d236ef808cb10eab89f24379244
                 },
-                utils: {
-                    ds-ola / src / lib / theme / utils / hexToRgba.ts
+                🟢 utils: {
+                    🟢 ds-ola / src / lib / theme / utils / hexToRgba.ts
                     https://gist.github.com/as-smirnov/226af1c727779f7b8c00c4df6c0c8302
                 },
-                global-styles.ts: {
-                    ds-ola / src / lib / theme / global-styles.ts
+                🟢 global-styles.ts: {
+                    🟢 ds-ola / src / lib / theme / global-styles.ts
                     https://gist.github.com/as-smirnov/7801fbc7359f4a84edb07269e113bf52
                 },
-                index.ts: {
-                    ds-ola / src / lib / theme / index.ts
+                🟢 index.ts: {
+                    🟢 ds-ola / src / lib / theme / index.ts
                     https://gist.github.com/as-smirnov/b1ba2e3d5ad27501808432a68f115755
                 },
-                styles.d.ts: {
-                    ds-ola / src / lib / theme / styles.d.ts
+                🟢 styles.d.ts: {
+                    🟢 ds-ola / src / lib / theme / styles.d.ts
                     https://gist.github.com/as-smirnov/ff6cb6eaf9d36f4a122bc28199293c70
                 },
-                theme.ts: {
-                    ds-ola / src / lib / theme / theme.ts
+                🟠 theme.ts: {
+                    🟠 ds-ola / src / lib / theme / theme.ts
                     https://gist.github.com/as-smirnov/c49336fe9481dd88f41e5523cdfe072b
                 },
             },
-            ui: {
-                badge: {
-                    ds-ola / src / lib / ui / badge
-                    Пока пусто
+            🟠 ui: {
+                🟢 badge: {
+                    🟢 ds-ola / src / lib / ui / badge.stories.tsx
+                    https://gist.github.com/as-smirnov/0aedd3832c5159a1fa44799a2c0f7fe0
+                    
+                    🟢 ds-ola / src / lib / ui / badge.tsx
+                    https://gist.github.com/as-smirnov/a6f03ec39ed438d012ff5d91cf4a3994
+
+                    🟢 ds-ola / src / lib / ui / index.ts
+                    https://gist.github.com/as-smirnov/51aaac36d581cafa0428cf17d0d89f28
                 },
-                button: {
-                    ds-ola / src / lib / ui / button / button.stories.tsx
+                🟢 button: {
+                    🟢 ds-ola / src / lib / ui / button / button.stories.tsx
                     https://gist.github.com/as-smirnov/4bce280d1d5835d491d3454f6212093d
                     
-                    ds-ola / src / lib / ui / button / button.tsx
+                    🟢 ds-ola / src / lib / ui / button / button.tsx
                     https://gist.github.com/as-smirnov/26e61e73ff0ade33624655c0ac37886c
 
-                    ds-ola / src / lib / ui / button / index.ts
+                    🟢 ds-ola / src / lib / ui / button / index.ts
                     https://gist.github.com/as-smirnov/ce509603471e51b7c45bdc4cd827b67f
                 },
-                button-icon: {
-                    ds-ola / src / lib / ui / button-icon
+                🟢 button-icon: {
+                    🟢 ds-ola / src / lib / ui / button-icon.stories.tsx
+                    https://gist.github.com/as-smirnov/3721b1ea264cb3447ea9291b6de688e2
+                    
+                    🟢 ds-ola / src / lib / ui / button-icon.tsx
+                    https://gist.github.com/as-smirnov/050eb0f8d261105941d9aea6ca3ed807
+
+                    🟢 ds-ola / src / lib / ui / index.ts
+                    https://gist.github.com/as-smirnov/cb75284de682f85d74305ace83e1aac9
+                },
+                ⚪️ checkbox: {
+                    ⚪️ ds-ola / src / lib / ui / checkbox 
                     Пока пусто
                 },
-                checkbox: {
-                    ds-ola / src / lib / ui / checkbox 
-                    Пока пусто
-                },
-                icon: {
-                    ds-ola / src / lib / ui / icon / icon.stories.jsx
+                🟢 icon: {
+                    🟢 ds-ola / src / lib / ui / icon / icon.stories.jsx
                     https://gist.github.com/as-smirnov/519a031b6274ccf9df7944e48471f530
 
-                    ds-ola / src / lib / ui / icon / icon.tsx
+                    🟢 ds-ola / src / lib / ui / icon / icon.tsx
                     https://gist.github.com/as-smirnov/f9cc1a953de1c36ed8831b310180128f
 
-                    ds-ola / src / lib / ui / icon / icons-set.ts
+                    🟢 ds-ola / src / lib / ui / icon / icons-set.ts
                     https://gist.github.com/as-smirnov/619fe1f7672e7a45188cca249667b18c
 
-                    ds-ola / src / lib / ui / icon / index.ts
+                    🟢 ds-ola / src / lib / ui / icon / index.ts
                     https://gist.github.com/as-smirnov/9a2e9b30f3266ad49befecd6abac548d
                 },
-                loader: {
-                    ds-ola / src / lib / ui / loader / index.ts
+                🟢 loader: {
+                    🟢 ds-ola / src / lib / ui / loader / index.ts
                     https://gist.github.com/as-smirnov/e8c7da6f7456d4f99ffbb3a835de2ea8
 
-                    ds-ola / src / lib / ui / loader / loader.tsx
+                    🟢 ds-ola / src / lib / ui / loader / loader.stories.tsx
+                    https://gist.github.com/as-smirnov/f98d112af4842d510e4c82668cb4e1d0
+                    
+                    🟢 ds-ola / src / lib / ui / loader / loader.tsx
                     https://gist.github.com/as-smirnov/8be05a0638ab2b653291f71b91d52b8b
                 },
             },
-            declarations.d.ts: {
-                ds-ola / src / lib / declarations.d.ts
+            🟢 declarations.d.ts: {
+                🟢 ds-ola / src / lib / declarations.d.ts
                 https://gist.github.com/as-smirnov/802adadd6ed12bdc4010c5348458d09f
             },
-            index.ts: {
-                ds-ola / src / lib / index.ts
+            🟢 index.ts: {
+                🟢 ds-ola / src / lib / index.ts
                 https://gist.github.com/as-smirnov/2c6bb885516443606b5a3fed280db6b5
             },
         },
-        App.tsx: {
+        🟠 App.tsx: {
             * в данном случае "App.tsx" пишется с заглавной
-            ds-ola / src / App.tsx
+            🟠 ds-ola / src / App.tsx
             https://gist.github.com/as-smirnov/662464246f51df39600b26d78c3d94e7
         },
-        main.tsx: {
-            ds-ola / src / main.tsx
+        🟢 main.tsx: {
+            🟢 ds-ola / src / main.tsx
             https://gist.github.com/as-smirnov/07a1e68c9135bf9cb02d054c2e00aca4
         },
-        vite-env.d.ts: {
-            ds-ola / src / vite-env.d.ts
+        🟢 vite-env.d.ts: {
+            🟢 ds-ola / src / vite-env.d.ts
             https://gist.github.com/as-smirnov/ecfc88232282cd66c264bc6cf76738c8
         },
     },
-    .eslintrc.cjs: {
-        ds-ola / .eslintrc.cjs
+    🟢 .eslintrc.cjs: {
+        🟢 ds-ola / .eslintrc.cjs
         https://gist.github.com/as-smirnov/83ac2907e807a42fea1b037766ca9709
     },
-    .gitignore: {
-        ds-ola / .gitignore
+    🟢 .gitignore: {
+        🟢 ds-ola / .gitignore
         https://gist.github.com/as-smirnov/529d405bbcd15356b871adaeaaa8f230
     },
-    .npmrc: {
-        ds-ola / .npmrc
+    🟢 .npmrc: {
+        🟢 ds-ola / .npmrc
         https://gist.github.com/as-smirnov/b7cd4e5108f3162a592268525ea2b2c4
     },
-    index.html: {
-        ds-ola / index.html
+    🟢 index.html: {
+        🟢 ds-ola / index.html
         https://gist.github.com/as-smirnov/36db7a1643999534981bfac3d3b6ca90
     },
-    package-lock.json: {
-        ds-ola / package-lock.json
+    🟢 package-lock.json: {
+        🟢 ds-ola / package-lock.json
         https://gist.github.com/as-smirnov/546bf4e566de666871d9882424d21e3a
     },
-    package.json: {
-        ds-ola / package.json
+    🟢 package.json: {
+        🟢 ds-ola / package.json
         https://gist.github.com/as-smirnov/7f49daf2f04915a0ac1d586497ccc0b4
     },
-    README.md: {
-        ds-ola / README.md
+    🟠 README.md: {
+        🟠 ds-ola / README.md
         https://gist.github.com/as-smirnov/1761dd4afed183b9108339613c18cbec
     },
-    tsconfig.json: {
-        ds-ola / tsconfig.json
+    🟢 tsconfig.json: {
+        🟢 ds-ola / tsconfig.json
         https://gist.github.com/as-smirnov/3285f14ba47b93c1183485db2828ce42
     },
-    tsconfig.node.json: {
-        ds-ola / tsconfig.node.json
+    🟢 tsconfig.node.json: {
+        🟢 ds-ola / tsconfig.node.json
         https://gist.github.com/as-smirnov/68b88eb35ae1ebb79ebf43fd0434ff2a
     },
-    vite.config.ts: {
-        ds-ola / vite.config.ts
+    🟢 vite.config.ts: {
+        🟢 ds-ola / vite.config.ts
         https://gist.github.com/as-smirnov/31c18382c6984fc76a7c742f23b54973
     },
 }
