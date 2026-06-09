@@ -22,7 +22,11 @@ const config: StorybookConfig = {
 	},
 
     // Настройка для копирования папки со шрифтами в корень сборки Storybook
-    staticDirs: ["../src/assets"],
+        // Замените старую строку staticDirs на этот объект:
+    staticDirs: [
+        { from: "../src/assets/fonts", to: "/assets/fonts" }
+    ],
+
 
     viteFinal: (config) => {
 		// Storybook 10: пакет @storybook/blocks удалён, блоки экспортируются из addon-docs
