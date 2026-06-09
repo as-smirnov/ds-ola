@@ -6,8 +6,8 @@ export const GlobalStyle = createGlobalStyle`
     @font-face {
       font-family: 'Inter Variable';
       /* 👈 Пишем путь к файлу от корня проекта как обычную строку */
-      src: url('/src/assets/fonts/Inter-Variable.woff2') format('woff2-variations'),
-           url('/src/assets/fonts/Inter-Variable.woff2') format('woff2');
+      src: url('/assets/fonts/Inter-Variable.woff2') format('woff2-variations'),
+           url('/assets/fonts/Inter-Variable.woff2') format('woff2');
       font-weight: 100 900; 
       font-style: normal;
       font-display: swap;
