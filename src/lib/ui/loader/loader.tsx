@@ -9,7 +9,7 @@ export type LoaderTone = "neutral" | "brand" | "positive" | "warning" | "negativ
 // 2. КАРТА РАЗМЕРОВ
 const loaderSizes: Record<LoaderSize, string> = {
   "16.Base": "16px", 
-  "16.Small": "16px", // Размер коробки одинаковый, так как оба SVG холста у тебя 16х16
+  "16.Small": "16px",
 };
 
 // 3. Анимация вращения
